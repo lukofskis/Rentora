@@ -5,7 +5,7 @@ Sprendžiamo uždavinio aprašymas
 
 ### Sistemos paskirtis
 
-    Sistema yra skirta padėti Pplengvinti nuomotojų ir nuomininkų darbą bei pagerinti priimamų sprendimų kokybę, teikiant nuomos ir naudojantis nuomos pąslaugomis.
+    Sistema yra skirta padėti palengvinti nuomotojų ir nuomininkų darbą bei pagerinti priimamų sprendimų kokybę, teikiant nuomos ir naudojantis nuomos pąslaugomis.
     Vartotojai šioje sistemoje galės:
     1. Prisiregistruoti prie platformos.
     2. Prisijungti prie platformos.
