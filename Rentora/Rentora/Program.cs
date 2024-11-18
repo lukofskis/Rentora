@@ -95,7 +95,7 @@ housesGroup.MapGet("houses/{houseId}", async (int houseId,ForumDbContext dbConte
 });
 
 // [Authorize(Roles = ForumRoles.ForumUser)]  ir UserId = ""
-housesGroup.MapPost("houses/", [Authorize(Roles = ForumRoles.ForumUser)]  async ([Validate]CreateHousesDto createHousesDto,HttpContext httpContext,ForumDbContext dbContext ) =>
+housesGroup.MapPost("houses/", [Authorize(Roles = ForumRoles.Renter)]  async ([Validate]CreateHousesDto createHousesDto,HttpContext httpContext,ForumDbContext dbContext ) =>
 {
     var houses = new Houses()
     {
@@ -113,7 +113,7 @@ housesGroup.MapPost("houses/", [Authorize(Roles = ForumRoles.ForumUser)]  async 
     return Results.Created($"/api/houses/{houses.Id}",
         new HousesDto(houses.Id, houses.CreatedAt, houses.Name, houses.Region, houses.District));
 });
-//neleisti kitiems paeditinti
+//neleisti kitiems paeditinti tik admin ir user
 housesGroup.MapPut("houses/{houseId}",[Authorize] async(int houseId,[Validate]UpdateHousesDto dto ,HttpContext httpContext,ForumDbContext dbContext  ) =>
 {
     var  house = await dbContext.Houses.FirstOrDefaultAsync((h) => h.Id == houseId);
@@ -140,13 +140,22 @@ housesGroup.MapPut("houses/{houseId}",[Authorize] async(int houseId,[Validate]Up
     return Results.Ok(new HousesDto(house.Id,house.CreatedAt, house.Name,house.Region,house.District));
 });
 
-housesGroup.MapDelete("houses/{houseId}", async (int houseId,ForumDbContext dbContext) =>
+housesGroup.MapDelete("houses/{houseId}",[Authorize] async (int houseId,ForumDbContext dbContext,HttpContext httpContext) =>
 {
     
     var  house = await dbContext.Houses.FirstOrDefaultAsync((h) => h.Id == houseId);
     if (house == null)
     {
         return Results.NotFound();
+    }
+    
+    var userId = httpContext.User.FindFirstValue(JwtRegisteredClaimNames.Sub); 
+    var isAdmin = httpContext.User.IsInRole(ForumRoles.Admin); 
+    var isRenterWhoCreated = house.UserId == userId && httpContext.User.IsInRole(ForumRoles.Renter); 
+
+    if (!isAdmin && !isRenterWhoCreated)
+    {
+        return Results.Forbid(); 
     }
     dbContext.Remove(house);
     await dbContext.SaveChangesAsync();
@@ -205,7 +214,7 @@ roomsGroup.MapGet("rooms/{roomId}", async (int houseId,int roomId, ForumDbContex
 
 });
 
-roomsGroup.MapPost("rooms/", async (int houseId,[Validate]CreateRoomsDto createRoomsDto,ForumDbContext dbContext ) =>
+roomsGroup.MapPost("rooms/",[Authorize(Roles = ForumRoles.Renter)] async (int houseId,[Validate]CreateRoomsDto createRoomsDto,HttpContext httpContext,ForumDbContext dbContext ) =>
 {
     var house = await dbContext.Houses.FirstOrDefaultAsync(h => h.Id == houseId);
 
@@ -219,7 +228,7 @@ roomsGroup.MapPost("rooms/", async (int houseId,[Validate]CreateRoomsDto createR
         Description = createRoomsDto.Description,
         Price = createRoomsDto.Price,
         Houses = house,
-        UserId = ""
+        UserId = httpContext.User.FindFirstValue(JwtRegisteredClaimNames.Sub)
     };
     
     dbContext.Rooms.Add(rooms);
@@ -229,22 +238,25 @@ roomsGroup.MapPost("rooms/", async (int houseId,[Validate]CreateRoomsDto createR
         new RoomsDto(rooms.Id, rooms.Number, rooms.Description, rooms.Price));
 });
 
-roomsGroup.MapPut("rooms/{roomId}", async (int houseId, int roomId, [Validate] UpdateRoomsDto dto, ForumDbContext dbContext) =>
+roomsGroup.MapPut("rooms/{roomId}", [Authorize] async (int houseId, int roomId, [Validate] UpdateRoomsDto dto, ForumDbContext dbContext,HttpContext httpContext) =>
 {
-    // Patikriname, ar nurodytas `House` egzistuoja
     var houseExists = await dbContext.Houses.AnyAsync(h => h.Id == houseId);
     if (!houseExists)
     {
         return Results.NotFound();
     }
-
-    // Ieškome kambario pagal `roomId` ir `houseId`
     var room = await dbContext.Rooms.FirstOrDefaultAsync(r => r.Id == roomId && r.Houses.Id == houseId);
 
    
     if (room == null)
     {
         return Results.NotFound();
+    }
+    
+    var userId = httpContext.User.FindFirstValue(JwtRegisteredClaimNames.Sub); 
+    if (!httpContext.User.IsInRole(ForumRoles.Admin) && room.UserId != userId)
+    {
+        return Results.Forbid(); 
     }
 
     room.Number = dto.Number;
@@ -257,7 +269,7 @@ roomsGroup.MapPut("rooms/{roomId}", async (int houseId, int roomId, [Validate] U
     return Results.Ok(new RoomsDto(room.Id, room.Number, room.Description, room.Price));
 });
 //gal galima bet CancellationToken cancellationToken
-roomsGroup.MapDelete("rooms/{roomId}", async (int houseId, int roomId, ForumDbContext dbContext) =>
+roomsGroup.MapDelete("rooms/{roomId}",[Authorize] async (int houseId, int roomId,HttpContext httpContext, ForumDbContext dbContext) =>
 {
     
     var houseExists = await dbContext.Houses.AnyAsync(h => h.Id == houseId);
@@ -274,6 +286,20 @@ roomsGroup.MapDelete("rooms/{roomId}", async (int houseId, int roomId, ForumDbCo
         return Results.NotFound();
     }
 
+    // var userId = httpContext.User.FindFirstValue(JwtRegisteredClaimNames.Sub); 
+    // if (!httpContext.User.IsInRole(ForumRoles.Admin) && room.UserId != userId)
+    // {
+    //     return Results.Forbid(); 
+    // }
+    
+    var userId = httpContext.User.FindFirstValue(JwtRegisteredClaimNames.Sub); 
+    var isAdmin = httpContext.User.IsInRole(ForumRoles.Admin); 
+    var isRenterWhoCreated = room.UserId == userId && httpContext.User.IsInRole(ForumRoles.Renter); 
+
+    if (!isAdmin && !isRenterWhoCreated)
+    {
+        return Results.Forbid(); 
+    }
     
     dbContext.Rooms.Remove(room);
     await dbContext.SaveChangesAsync();
@@ -346,8 +372,14 @@ notesGroup.MapGet("notes/{noteId}", async (int houseId,int roomId,int noteId, Fo
 
 
 
-notesGroup.MapPost("notes/", async (int houseId, int roomId,[Validate]CreateNotesDto createNotesDto,ForumDbContext dbContext ) =>
+notesGroup.MapPost("notes/",[Authorize] async (int houseId, int roomId,[Validate]CreateNotesDto createNotesDto,HttpContext httpContext,ForumDbContext dbContext ) =>
 {
+    var userIsAuthorized = httpContext.User.IsInRole(ForumRoles.ForumUser) || httpContext.User.IsInRole(ForumRoles.Renter);
+    if (!userIsAuthorized)
+    {
+        return Results.Forbid();
+    }
+    
     var house = await dbContext.Houses.FirstOrDefaultAsync(h => h.Id == houseId);
 
     if (house == null)
@@ -362,12 +394,12 @@ notesGroup.MapPost("notes/", async (int houseId, int roomId,[Validate]CreateNote
         return Results.NotFound();
     }
     
-    
+    var userId = httpContext.User.FindFirstValue(JwtRegisteredClaimNames.Sub);
     var notes = new Notes
     {
         Note = createNotesDto.Note,  
         Rooms = room,
-        UserId = ""
+        UserId = userId
     };
 
     
@@ -378,7 +410,7 @@ notesGroup.MapPost("notes/", async (int houseId, int roomId,[Validate]CreateNote
         new NotesDto(notes.Id, notes.Note));
 });
 
-notesGroup.MapPut("notes/{noteId}", async (int houseId, int roomId, int noteId, [Validate] UpdateNotesDto dto, ForumDbContext dbContext) =>
+notesGroup.MapPut("notes/{noteId}",[Authorize] async (int houseId, int roomId, int noteId, [Validate] UpdateNotesDto dto,HttpContext httpContext, ForumDbContext dbContext) =>
 {
     
     var houseExists = await dbContext.Houses.AnyAsync(h => h.Id == houseId);
@@ -401,6 +433,18 @@ notesGroup.MapPut("notes/{noteId}", async (int houseId, int roomId, int noteId, 
     {
         return Results.NotFound();
     }
+    
+    var userId = httpContext.User.FindFirstValue(JwtRegisteredClaimNames.Sub);
+    var isAdmin = httpContext.User.IsInRole(ForumRoles.Admin);
+    var isOwner = note.UserId == userId && (httpContext.User.IsInRole(ForumRoles.ForumUser) || httpContext.User.IsInRole(ForumRoles.Renter));
+
+   
+    if (!isAdmin && !isOwner)
+    {
+        return Results.Forbid();
+    }
+    
+    
     note.Note = dto.Note;
 
     dbContext.Notes.Update(note);
@@ -409,7 +453,7 @@ notesGroup.MapPut("notes/{noteId}", async (int houseId, int roomId, int noteId, 
     return Results.Ok(new NotesDto(note.Id, note.Note));
 });
 //gal galima bet CancellationToken cancellationToken
-notesGroup.MapDelete("notes/{noteId}", async (int houseId, int roomId, int noteId, ForumDbContext dbContext) =>
+notesGroup.MapDelete("notes/{noteId}",[Authorize] async (int houseId, int roomId, int noteId,HttpContext httpContext, ForumDbContext dbContext) =>
 {
     
     var houseExists = await dbContext.Houses.AnyAsync(h => h.Id == houseId);
@@ -432,6 +476,14 @@ notesGroup.MapDelete("notes/{noteId}", async (int houseId, int roomId, int noteI
         return Results.NotFound();
     }
 
+    var userId = httpContext.User.FindFirstValue(JwtRegisteredClaimNames.Sub);
+    var isAdmin = httpContext.User.IsInRole(ForumRoles.Admin);
+    var isOwner = note.UserId == userId && (httpContext.User.IsInRole(ForumRoles.ForumUser) || httpContext.User.IsInRole(ForumRoles.Renter));
+    
+    if (!isAdmin && !isOwner)
+    {
+        return Results.Forbid();
+    }
     
     dbContext.Notes.Remove(note);
     await dbContext.SaveChangesAsync();
