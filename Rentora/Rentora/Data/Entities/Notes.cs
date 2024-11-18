@@ -1,3 +1,6 @@
+using System.ComponentModel.DataAnnotations;
+using Rentora.Auth.Model;
+
 namespace Rentora.Data.Entities;
 using FluentValidation;
 public class Notes
@@ -8,6 +11,11 @@ public class Notes
     //public required int FkRoom { get; set; }
     
     public required Rooms Rooms { get; set; }
+    
+    [Required]
+    public required string UserId { get; set; }
+    
+    public ForumUser User { get; set; }
 }
 
 public record NotesDto(int Id, string Note);

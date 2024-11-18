@@ -1,3 +1,6 @@
+using System.ComponentModel.DataAnnotations;
+using Rentora.Auth.Model;
+
 namespace Rentora.Data.Entities;
 using FluentValidation;
 public class Houses
@@ -13,7 +16,10 @@ public class Houses
     //public int? WifiSpeed { get; set; }
     //public required int FkRenter { get; set; }
  
+    [Required]
+    public required string UserId { get; set; }
     
+    public ForumUser User { get; set; }
     
 }
 public record HousesDto(int Id,DateTimeOffset CreatedAt,string Name,string Region,string District);

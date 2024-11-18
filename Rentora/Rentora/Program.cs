@@ -1,10 +1,19 @@
+using System.Security.Claims;
+using System.Text;
 using FluentValidation;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
 using O9d.AspNet.FluentValidation;
+using Rentora.Auth;
+using Rentora.Auth.Model;
 using Rentora.Data;
 using Rentora.Data.Entities;
-
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.IdentityModel.JsonWebTokens;
 var builder = WebApplication.CreateBuilder(args);
 
 //PostgreSQL
@@ -21,7 +30,38 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<ForumDbContext>();
 builder.Services.AddValidatorsFromAssemblyContaining<Program>();
+builder.Services.AddTransient<JwtTokenService>();
+builder.Services.AddTransient<SessionService>();
+builder.Services.AddScoped<AuthSeeder>();
+//2
+builder.Services.AddIdentity<ForumUser, IdentityRole>()
+    .AddEntityFrameworkStores<ForumDbContext>()
+    .AddDefaultTokenProviders();
+
+builder.Services.AddAuthentication(configureOptions: options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.MapInboundClaims = false;
+    options.TokenValidationParameters.ValidAudience = builder.Configuration["Jwt:ValidAudience"];
+    options.TokenValidationParameters.ValidIssuer = builder.Configuration["Jwt:ValidIssuer"];
+    options.TokenValidationParameters.IssuerSigningKey =
+        new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:Secret"]));
+});
+
+builder.Services.AddAuthorization();
+
 var app = builder.Build();
+//app.UseCors();
+using var scope = app.Services.CreateScope();
+//var dbContext = scope.ServiceProvider.GetRequiredService<ForumDbContext>();
+
+var dbSeeder = scope.ServiceProvider.GetRequiredService<AuthSeeder>();
+await dbSeeder.SeedAsync();
+
 /*
     /api/v1/houses GET List 200
     /api/v1/houses POST Create 201
@@ -35,7 +75,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-
+app.AddAuthApi();
 var housesGroup = app.MapGroup("/api").WithValidationFilter();
 //automapper, mapperly bibliotekos, darysime rankiniu
 housesGroup.MapGet("houses", async (ForumDbContext dbContext, CancellationToken CancellationToken) =>
@@ -54,7 +94,8 @@ housesGroup.MapGet("houses/{houseId}", async (int houseId,ForumDbContext dbConte
     return Results.Ok(new HousesDto(house.Id,house.CreatedAt, house.Name,house.Region,house.District));
 });
 
-housesGroup.MapPost("houses/", async ([Validate]CreateHousesDto createHousesDto,ForumDbContext dbContext ) =>
+// [Authorize(Roles = ForumRoles.ForumUser)]  ir UserId = ""
+housesGroup.MapPost("houses/", [Authorize(Roles = ForumRoles.ForumUser)]  async ([Validate]CreateHousesDto createHousesDto,HttpContext httpContext,ForumDbContext dbContext ) =>
 {
     var houses = new Houses()
     {
@@ -62,21 +103,32 @@ housesGroup.MapPost("houses/", async ([Validate]CreateHousesDto createHousesDto,
         Name = createHousesDto.Name,
         Region = createHousesDto.Region,
         District = createHousesDto.District,
+        UserId = httpContext.User.FindFirstValue(JwtRegisteredClaimNames.Sub)
 
     };
+    
     dbContext.Houses.Add(houses);
     await dbContext.SaveChangesAsync();
 
     return Results.Created($"/api/houses/{houses.Id}",
         new HousesDto(houses.Id, houses.CreatedAt, houses.Name, houses.Region, houses.District));
 });
-housesGroup.MapPut("houses/{houseId}", async(int houseId,[Validate]UpdateHousesDto dto ,ForumDbContext dbContext  ) =>
+//neleisti kitiems paeditinti
+housesGroup.MapPut("houses/{houseId}",[Authorize] async(int houseId,[Validate]UpdateHousesDto dto ,HttpContext httpContext,ForumDbContext dbContext  ) =>
 {
     var  house = await dbContext.Houses.FirstOrDefaultAsync((h) => h.Id == houseId);
     if (house == null)
     {
         return Results.NotFound();
     }
+    
+    if (!httpContext.User.IsInRole(ForumRoles.Admin) &&
+        httpContext.User.FindFirstValue(JwtRegisteredClaimNames.Sub) != house.UserId)
+    {
+        // NotFound()
+        return Results.Forbid();
+    }
+
     house.Name = dto.Name;
     house.Region = dto.Region;
     house.District = dto.District;
@@ -166,7 +218,8 @@ roomsGroup.MapPost("rooms/", async (int houseId,[Validate]CreateRoomsDto createR
         Number = createRoomsDto.Number,
         Description = createRoomsDto.Description,
         Price = createRoomsDto.Price,
-        Houses = house
+        Houses = house,
+        UserId = ""
     };
     
     dbContext.Rooms.Add(rooms);
@@ -313,7 +366,8 @@ notesGroup.MapPost("notes/", async (int houseId, int roomId,[Validate]CreateNote
     var notes = new Notes
     {
         Note = createNotesDto.Note,  
-        Rooms = room
+        Rooms = room,
+        UserId = ""
     };
 
     
@@ -386,6 +440,11 @@ notesGroup.MapDelete("notes/{noteId}", async (int houseId, int roomId, int noteI
 });
 
 
-
+//lab2 bib
+// Microsoft.AspNetCore.Identity nebereik
+// Microsoft.AspNetCore.Identity.EntityFrameworkCore
+// Microsoft.AspNetCore.Authentication.JwtBearer
+app.UseAuthentication();
+app.UseAuthorization();
 app.Run();
 
