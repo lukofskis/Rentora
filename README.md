@@ -742,5 +742,5 @@ Status 200
 2. Duomenų bazei panaudotas PostgresSQL.
 3. Klientinei daliai sukurti panaudotas React.js
 4. Autorizacijai panaudoti JWT tokenai.
-5. Kliento ir serverio dalys yra pasiekiamos per debesis.
+5. Serverio dalys yra pasiekiamos per debesis.
 6. Pateikta detali ataskaita.
