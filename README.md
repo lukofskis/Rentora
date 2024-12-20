@@ -63,14 +63,20 @@ img
 
 ## 3.3 Prisijungimo forma
 ### Wireframe
+![image](https://github.com/user-attachments/assets/44eec996-42e9-47ae-9614-0f77cc945060)
+
 ![image](https://github.com/user-attachments/assets/392b6bbf-d83b-46e1-8d45-b3ce29507fe0)
 
 Panašaus principo wireframe pritaikomas ir registracijai, tačiau atsiranda papildomas email langas
 
 ### Realus pavyzdys (prisijungimas)
+![image](https://github.com/user-attachments/assets/25b642ef-e8df-4206-b0bf-1e68611531e4)
+
 ![image](https://github.com/user-attachments/assets/52ed2bdf-9d4d-42cb-8a41-cfbcaf486de1)
 
 ### Realus pavyzdys (registracija)
+![image](https://github.com/user-attachments/assets/ba927e83-8a39-48ee-a011-25309b3c71b9)
+
 ![image](https://github.com/user-attachments/assets/72486aae-f1f9-4ec9-aa53-720a7b985b82)
 
 ## 3.4 Prisijungimo forma
