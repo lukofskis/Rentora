@@ -84,40 +84,27 @@ Sistemos architektūra:
 ### 3.5 Room kurimo forma
 ### Wireframe
 ![image](https://github.com/user-attachments/assets/44eec996-42e9-47ae-9614-0f77cc945060)
-### Realus pavyzdys (prisijungimas)
+
+
+### Realus pavyzdys 
 ![image](https://github.com/user-attachments/assets/c0a7e0b5-7d57-487f-8ef6-131315fe392e)
 
 
-## 3.4 Registracijos forma
-
+## 3.6 Registracijos forma
+### Wireframe
 ![image](https://github.com/user-attachments/assets/ba927e83-8a39-48ee-a011-25309b3c71b9)
 
 
-### Realus pavyzdys (prisijungimas)
+### Realus pavyzdys 
 ![image](https://github.com/user-attachments/assets/9f065ab2-c411-4926-8863-3cca2535ec47)
-
-Panašaus principo wireframe pritaikomas ir registracijai, tačiau atsiranda papildomas email langas
-
-
-
-Panašaus principo wireframe pritaikomas ir kitiems kūrumo/redagavimo langams
-
-### Realus pavyzdys (kuriamas naujas meal)
-
-### Realus pavyzdys (redaguojamas meal)
-### Realus pavyzdys (kuriamas naujas recipie)
-
-
-### Realus pavyzdys (redaguojamas recipie)
-
 
 # 4.	API specifikacija
 
-## Meals
+## Houses
 
-### GET /api/meals
+### GET /api/houses
 
-Fetches a list of meals.
+Fetches a list of houses.
 
 ### Resource Information:
 
@@ -129,7 +116,7 @@ Fetches a list of meals.
 ### Example Request:
 
 ```http
-GET http://localhost:5000/api/meals
+GET http://localhost:5106/api/houses
 ```
 
 ### Response
@@ -137,24 +124,13 @@ GET http://localhost:5000/api/meals
 ```http
 Status 200
 [
-    {
-        "id": 22,
-        "name": "Pizza",
-        "description": "Mamma mia, best pizza recipies here!",
-        "creationDate": "2024-12-08T13:58:10.965135Z"
-    },
-    {
-        "id": 23,
-        "name": "Soup",
-        "description": "Cold, hot, sweet or salty - all the best soup recipies here!",
-        "creationDate": "2024-12-08T13:58:46.688117Z"
-    },
-    {
-        "id": 24,
-        "name": "Lasagna",
-        "description": "All the best variants of Lasagna recipies from all across the globe",
-        "creationDate": "2024-12-08T13:58:56.524768Z"
-    },
+    
+        "id": 1,
+        "createdAt": "2024-12-19T21:02:13.347931+00:00",
+        "name": "Viezbutis",
+        "region": "Kaunas",
+        "district": "Panemune"
+    
 ]
 ```
 
@@ -174,26 +150,27 @@ Fetches details for a specific meal.
 ### Example Request:
 
 ```http
-GET http://localhost:5000/api/meals/22
+GET http://localhost:5106/api/houses
 ```
 
 ### Response
 
 ```http
 Status 200
-{
-    "id": 22,
-    "name": "Pizza",
-    "description": "Mamma mia, best pizza recipies here!",
-    "creationDate": "2024-12-08T13:58:10.965135Z"
-} 
+ {
+        "id": 1,
+        "createdAt": "2024-12-19T21:02:13.347931+00:00",
+        "name": "Viezbutis",
+        "region": "Kaunas",
+        "district": "Panemune"
+    },
 ```
 
 ---
 
-### POST /api/meals
+### POST /api/houses
 
-Creates a new meal.
+Creates a new House.
 
 ### Resource Information:
 
@@ -205,9 +182,11 @@ Creates a new meal.
 ### Body:
 
 ```http
+Status 200
 {
-    "name": "Demo",
-    "description": "All the best variants of Lasagna recipies from all across the globe"
+    "name": "null",
+    "region": "nullnull",
+    "district": "nullnull"
 }
 ```
 
