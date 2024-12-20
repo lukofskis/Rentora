@@ -18,7 +18,6 @@ Kuriamas projektas – minimali nuomojamu kambario sistema (House -> Room -> Not
     
 ## 1.2. Funkciniai reikalavimai
     Neregistruotas sistemos naudotojas galės:
-
     Peržiūrėti platformos reprezentacinį puslapį.
     Prisiregistruoti prie platformos.
     Prisijungti prie platformos.
