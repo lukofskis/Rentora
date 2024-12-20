@@ -504,7 +504,7 @@ Status 200
 
 ### GET /api/houses/{houseId}/rooms/{roomId}/note/{noteId}
 
-Fetches details for a specific comment.
+Fetches details for a specific note.
 
 ### Resource Information:
 
@@ -533,7 +533,7 @@ Status 200
 
 ### POST  /api/houses/{houseId}/rooms/{roomId}/note
 
-Creates a new comment.
+Creates a new note.
 
 ### Resource Information:
 
