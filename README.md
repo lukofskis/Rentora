@@ -41,22 +41,25 @@ Sistemos architektūra:
 img
 
    # 3. 	Naudotojo sąsaja
-## 3.1 Pagrindinis/Meal puslaptis
+## 3.1 Pagrindinis/Home puslaptis
 ### Wireframe
 ![image](https://github.com/user-attachments/assets/d5c90305-7007-4e56-9feb-b57cffd5ffe6)
 
-![image](https://github.com/user-attachments/assets/a05da562-1636-45f5-96ee-2bf0946b19a8)
+
 
 ### Realus pavyzdys
-![image](https://github.com/user-attachments/assets/edd6899e-36e1-4c87-84fa-2a5c50c84891)
+![image](https://github.com/user-attachments/assets/f37ad168-a85f-4a77-aa5c-91c25b5a538e)
 
-## 3.2 Atitinkamo recipie puslaptis
+
+## 3.2 Atitinkamo house puslaptis
 ### Wireframe
 ![image](https://github.com/user-attachments/assets/eb43c9a8-14de-47b0-8f4d-6c9f342ab5da)
 
-![image](https://github.com/user-attachments/assets/8aacd9db-6168-4c5b-bd36-b7e324a67d34)
+
 
 ### Realus pavyzdys
+![image](https://github.com/user-attachments/assets/9a7f60fa-221f-45bd-b881-acf7bfb3cba8)
+
 ![image](https://github.com/user-attachments/assets/cb960b83-3dd1-4548-b450-97578ffdd548)
 
 ![image](https://github.com/user-attachments/assets/5e86c6fd-2bca-49f7-afb5-7997520f996f)
