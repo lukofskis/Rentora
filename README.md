@@ -136,9 +136,9 @@ Status 200
 
 ---
 
-### GET /api/meals/{mealId}
+### GET /api/houses/{houseId}
 
-Fetches details for a specific meal.
+Fetches details for a specific house.
 
 ### Resource Information:
 
@@ -150,7 +150,7 @@ Fetches details for a specific meal.
 ### Example Request:
 
 ```http
-GET http://localhost:5106/api/houses
+GET http://localhost:5106/api/houses/1
 ```
 
 ### Response
@@ -193,26 +193,27 @@ Status 200
 ### Example Request:
 
 ```http
-POST http://localhost:5000/api/meals
+POST http://localhost:5106/api/houses
 ```
 
 ### Response
 
 ```http
 Status 201
-{
-    "id": 32,
-    "name": "Demo",
-    "description": "All the best variants of Lasagna recipies from all across the globe",
-    "creationDate": "2024-12-12T17:02:44.3073953Z"
-}
+ {
+        "id": 1,
+        "createdAt": "2024-12-19T21:02:13.347931+00:00",
+        "name": "Viezbutis",
+        "region": "Kaunas",
+        "district": "Panemune"
+    },
 ```
 
 ---
 
-### PUT /api/meals/{mealId}
+### PUT /api/houses/{houseId}
 
-Updates the description of an existing meal.
+Updates the name, region, dictricct of an existing house.
 
 ### Resource Information:
 
@@ -225,14 +226,19 @@ Updates the description of an existing meal.
 
 ```http
 {
-    "description": "very long description"
+    {
+    "name": "gsdgsdgsdgsdg",
+    "region": "nullnull",
+    "district": "fsssse"
+    
+}
 }
 ```
 
 ### Example Request:
 
 ```http
-PUT http://localhost:5000/api/meals/32
+PUT http://localhost:5106/api/houses/1
 ```
 
 ### Response
@@ -240,16 +246,19 @@ PUT http://localhost:5000/api/meals/32
 ```http
 Status 200
 {
-    "id": 32,
-    "name": "Demo",
-    "description": "very long description",
-    "creationDate": "2024-12-12T17:02:44.307395Z"
+     {
+        "id": 1,
+        "createdAt": "2024-12-19T21:02:13.347931+00:00",
+        "name": "Viezbutis",
+        "region": "Kaunas",
+        "district": "Panemune"
+    },
 }
 ```
 
 ---
 
-### DELETE /api/meals/{mealId}
+### DELETE /api/houses/{houseId}
 
 Deletes a specific meal.
 
@@ -263,7 +272,7 @@ Deletes a specific meal.
 ### Example Request:
 
 ```http
-DELETE http://localhost:5000/api/meals/32
+DELETE http://localhost:5106/api/houses/32
 ```
 
 ### Response
@@ -274,11 +283,11 @@ Status 204
 
 ---
 
-## Recipies
+## rooms
 
-### GET /api/meals/{mealid}/recipies
+### GET /api/houses/{houseId}/rooms
 
-Fetches a list of recipies.
+Fetches a list of rooms.
 
 ### Resource Information:
 
@@ -290,7 +299,7 @@ Fetches a list of recipies.
 ### Example Request:
 
 ```http
-GET http://localhost:5000/api/meals/22/recipies
+GET http://localhost:5106/api/houses/1/rooms
 ```
 
 ### Response
@@ -298,38 +307,26 @@ GET http://localhost:5000/api/meals/22/recipies
 ```http
 Status 200
 [
-    {
-        "id": 9,
-        "name": "Cheese pizza",
-        "description": "The cheese pizza features a perfectly round, golden-brown crust, with a soft and chewy center that invites you to take a bite. The surface is generously covered with a thick, gooey layer of melted mozzarella cheese, which stretches with every slice pulled away. The cheese is evenly melted, with a slight golden hue on the edges where it has crisped up, adding texture to every bite. Its simple elegance makes the pizza look warm and comforting, with no toppings to distract from the pure, creamy cheese. The overall appearance is clean, smooth, and inviting, with a timeless appeal that promises a delightful, satisfying experience.",
-        "creationDate": "2024-12-08T14:03:05.855679Z"
+     {
+        "id": 1,
+        "number": 1,
+        "description": "Su langu i Nemuna",
+        "price": 50
     },
     {
-        "id": 10,
-        "name": "Mushroom pizza",
-        "description": "The mushroom pizza has a golden-brown, slightly crispy crust forming the outline of a cheerful face. The sauce, spread evenly across the pizza, gives the face a warm, inviting glow, while a layer of melted mozzarella cheese serves as the skin, bubbling and slightly browned in places for added character. Mushrooms are scattered across the pizza, resembling eyes, a nose, and even a quirky smile. A few slivers of red bell pepper or olives add a touch of detail for eyebrows, giving the face a playful, expressive look. The overall expression is one of joy, with a cheesy smile that’s sure to delight anyone who takes a bite.",
-        "creationDate": "2024-12-08T14:03:13.608262Z"
-    },
-    {
-        "id": 11,
-        "name": "Vegan pizza",
-        "description": "The vegan pizza boasts a golden-brown, crispy crust that provides the perfect base for a colorful array of plant-based toppings. A layer of creamy, dairy-free cheese stretches across the surface, offering a smooth, melty texture with slight golden-brown spots where it has crisped up. Vibrant vegetables such as red peppers, onions, mushrooms, spinach, and cherry tomatoes are scattered generously across the pizza, adding a fresh, natural burst of color and flavor. Each bite is a balance of savory, earthy, and slightly sweet flavors, with the toppings offering a satisfying contrast to the soft, slightly chewy crust. The pizza looks fresh, inviting, and full of wholesome goodness, with an appetizing combination of textures and colors that makes it both visually appealing and deliciously vegan.",
-        "creationDate": "2024-12-08T14:04:04.874429Z"
-    },
-    {
-        "id": 12,
-        "name": "Pineapple pizza",
-        "description": "The pineapple pizza features a golden, slightly crispy crust that provides a perfect foundation for its unique combination of toppings. A layer of melted mozzarella cheese blankets the surface, with pockets of gooey cheese adding a satisfying stretch. The star of the pizza, juicy pineapple chunks, are scattered evenly across the pie, their vibrant yellow color contrasting beautifully with the rich cheese and the light golden crust. The pineapple’s sweetness contrasts perfectly with the savory, slightly salty flavor of the cheese, creating a balanced and intriguing flavor profile. The edges of the crust are lightly browned, giving the pizza a rustic, inviting appearance. Each bite offers a delicious mix of sweet and savory, with a perfect balance of textures, from the soft pineapple to the crispy crust and melted cheese.",
-        "creationDate": "2024-12-08T14:04:34.126975Z"
+        "id": 2,
+        "number": 2,
+        "description": "Sutoktiniams",
+        "price": 250
     }
 ]
 ```
 
 ---
 
-### GET /api/meals/{mealid}/recipies/{recipid}
+### GET /api/houses/{houseId}/rooms/{roomId}
 
-Fetches details for a specific recipie.
+Fetches details for a specific room.
 
 ### Resource Information:
 
@@ -341,26 +338,26 @@ Fetches details for a specific recipie.
 ### Example Request:
 
 ```http
-GET http://localhost:5000/api/meals/22/recipies/9
+GET http://localhost:5106/api/houses/1/rooms/1
 ```
 
 ### Response
 
 ```http
 Status 200
-{
-    "id": 9,
-    "name": "Cheese pizza",
-    "description": "The cheese pizza features a perfectly round, golden-brown crust, with a soft and chewy center that invites you to take a bite. The surface is generously covered with a thick, gooey layer of melted mozzarella cheese, which stretches with every slice pulled away. The cheese is evenly melted, with a slight golden hue on the edges where it has crisped up, adding texture to every bite. Its simple elegance makes the pizza look warm and comforting, with no toppings to distract from the pure, creamy cheese. The overall appearance is clean, smooth, and inviting, with a timeless appeal that promises a delightful, satisfying experience.",
-    "creationDate": "2024-12-08T14:03:05.855679Z"
-}
+ {
+        "id": 1,
+        "number": 1,
+        "description": "Su langu i Nemuna",
+        "price": 50
+    },
 ```
 
 ---
 
-### POST  /api/meals/{mealid}/recipies
+### POST  /api/houses/{houseId}/rooms
 
-Creates a new recipie.
+Creates a new room.
 
 ### Resource Information:
 
@@ -373,15 +370,16 @@ Creates a new recipie.
 
 ```http
 {
-    "name": "Cheesy lasagna",
-    "description": "Cheesy lasagna, as the name suggests, is a variation that places extra emphasis on the cheese. While it still features the classic layers of pasta and savory meat sauce, this version is topped with an abundance of melted mozzarella and parmesan cheeses, creating a gooey, cheesy top layer. The cheese is often layered throughout the dish, making each bite extra indulgent and cheesy. The result is a lasagna that is even more decadent, with the cheese creating a stretchy, satisfying texture that complements the hearty sauce and pasta. It’s a dish that will please any cheese lover with its rich, creamy, and melt-in-your-mouth goodness."
+    "number": 5,
+    "description": "Su",
+    "price": 4
 }
 ```
 
 ### Example Request:
 
 ```http
-POST http://localhost:5000/api/meals/24/recipies
+POST http://localhost:5106/api/houses/1/rooms
 ```
 
 ### Response
@@ -389,18 +387,17 @@ POST http://localhost:5000/api/meals/24/recipies
 ```http
 Status 201
 {
-    "id": 23,
-    "name": "Cheesy lasagna",
-    "description": "Cheesy lasagna, as the name suggests, is a variation that places extra emphasis on the cheese. While it still features the classic layers of pasta and savory meat sauce, this version is topped with an abundance of melted mozzarella and parmesan cheeses, creating a gooey, cheesy top layer. The cheese is often layered throughout the dish, making each bite extra indulgent and cheesy. The result is a lasagna that is even more decadent, with the cheese creating a stretchy, satisfying texture that complements the hearty sauce and pasta. It’s a dish that will please any cheese lover with its rich, creamy, and melt-in-your-mouth goodness.",
-    "creationDate": "2024-12-12T17:18:18.8232309Z"
+    "number": 5,
+    "description": "Su",
+    "price": 4
 }
 ```
 
 ---
 
-### PUT  /api/meals/{mealid}/recipies/{recipid}
+### PUT  /api/houses/{houseId}/rooms/{roomId}
 
-Updates the description of an existing recipie.
+Updates the description of an existing room.
 
 ### Resource Information:
 
@@ -413,14 +410,16 @@ Updates the description of an existing recipie.
 
 ```http
 {
-    "description": "very long description"
+    "number": 99999,
+    "description": "rrr",
+    "price": 99
 }
 ```
 
 ### Example Request:
 
 ```http
-PUT http://localhost:5000/api/meals/24/recipies/23
+PUT http://localhost:5106/api/houses/1/rooms/1
 ```
 
 ### Response
@@ -428,18 +427,17 @@ PUT http://localhost:5000/api/meals/24/recipies/23
 ```http
 Status 200
 {
-    "id": 23,
-    "name": "Cheesy lasagna",
-    "description": "very long description",
-    "creationDate": "2024-12-12T17:18:18.82323Z"
+    "number": 99999,
+    "description": "rrr",
+    "price": 99
 }
 ```
 
 ---
 
-### DELETE  /api/meals/{mealid}/recipies/{recipid}
+### DELETE  /api/houses/{houseId}/rooms/{roomId}
 
-Deletes a specific recipie.
+Deletes a specific room.
 
 ### Resource Information:
 
@@ -451,7 +449,7 @@ Deletes a specific recipie.
 ### Example Request:
 
 ```http
-DELETE http://localhost:5000/api/meals/32
+DELETE http://localhost:5106/api/houses/1
 ```
 
 ### Response
@@ -462,11 +460,11 @@ Status 204
 
 ---
 
-## Comments
+## note
 
-### GET /api/meals/{mealid}/recipies/{recipieid}/comments
+### GET /api/houses/{houseId}/rooms/{roomId}/note
 
-Fetches a list of comments.
+Fetches a list of note.
 
 ### Resource Information:
 
@@ -478,7 +476,7 @@ Fetches a list of comments.
 ### Example Request:
 
 ```http
-GET http://localhost:5000/api/meals/22/recipies/9/comments
+GET http://localhost:5106/api/houses/1/rooms/1/note
 ```
 
 ### Response
@@ -487,21 +485,24 @@ GET http://localhost:5000/api/meals/22/recipies/9/comments
 Status 200
 [
     {
-        "id": 20,
-        "content": "LABAI GERAS RECEPTAS, 10/10",
-        "creationDate": "2024-12-12T16:14:15.146574Z"
+        "id": 2,
+        "note": "Sviesus"
     },
     {
-        "id": 21,
-        "content": "O MAN NELABAI PATIKO, FUJ",
-        "creationDate": "2024-12-12T16:14:22.318522Z"
+        "id": 3,
+        "note": "Siltas"
+    },
+    {
+        "id": 4,
+        "note": "Geras kambariukas"
     }
+]
 ]
 ```
 
 ---
 
-### GET /api/meals/{mealid}/recipies/{recipieid}/comments/{commentid}
+### GET /api/houses/{houseId}/rooms/{roomId}/note/{noteId}
 
 Fetches details for a specific comment.
 
@@ -515,23 +516,22 @@ Fetches details for a specific comment.
 ### Example Request:
 
 ```http
-GET http://localhost:5000/api/meals/22/recipies/9/comments/20
+GET http://localhost:5106/api/houses/1/rooms/1/note/2
 ```
 
 ### Response
 
 ```http
 Status 200
-{
-    "id": 20,
-    "content": "LABAI GERAS RECEPTAS, 10/10",
-    "creationDate": "2024-12-12T16:14:15.146574Z"
-}
+  {
+        "id": 2,
+        "note": "Sviesus"
+    },
 ```
 
 ---
 
-### POST  /api/meals/{mealid}/recipies/{recipieid}/comments
+### POST  /api/houses/{houseId}/rooms/{roomId}/note
 
 Creates a new comment.
 
@@ -546,14 +546,15 @@ Creates a new comment.
 
 ```http
 {
-    "content": "Fuj neskanu"
+    "note": "Senas"
+    
 }
 ```
 
 ### Example Request:
 
 ```http
-POST http://localhost:5000/api/meals/22/recipies/9/comments
+POST http://localhost:5106/api/houses/1/rooms/1/note
 ```
 
 ### Response
@@ -561,17 +562,16 @@ POST http://localhost:5000/api/meals/22/recipies/9/comments
 ```http
 Status 201
 {
-    "id": 22,
-    "content": "Fuj neskanu",
-    "creationDate": "2024-12-12T17:27:01.5560578Z"
+    "note": "Senas"
+    
 }
 ```
 
 ---
 
-### PUT  /api/meals/{mealid}/recipies/{recipieid}/comments/{commentid}
+### PUT  /api/houses/{houseId}/rooms/{roomId}/note/{noteId}
 
-Updates the description of an existing comment.
+Updates the description of an existing note.
 
 ### Resource Information:
 
@@ -584,14 +584,15 @@ Updates the description of an existing comment.
 
 ```http
 {
-    "content": "MAN LABAI LABAI PATIKO"
+    "note": "Senas"
+    
 }
 ```
 
 ### Example Request:
 
 ```http
-PUT http://localhost:5000/api/meals/22/recipies/9/comments/22
+PUT http://localhost:5106/api/houses/1/rooms/1/note/1
 ```
 
 ### Response
@@ -599,17 +600,16 @@ PUT http://localhost:5000/api/meals/22/recipies/9/comments/22
 ```http
 Status 200
 {
-    "id": 22,
-    "content": "MAN LABAI LABAI PATIKO",
-    "creationDate": "2024-12-12T17:27:01.556057Z"
+    "id": 5,
+    "note": "Senas"
 }
 ```
 
 ---
 
-### DELETE  /api/meals/{mealid}/recipies/{recipieid}/comments/{commentid}
+### DELETE  /api/houses/{houseId}/rooms/{roomId}/note/{noteId}
 
-Deletes a specific comment.
+Deletes a specific note.
 
 ### Resource Information:
 
@@ -621,7 +621,7 @@ Deletes a specific comment.
 ### Example Request:
 
 ```http
-DELETE http://localhost:5000/api/meals/22/recipies/9/comments/22
+DELETE http://localhost:5106/api/houses/1/rooms/1/note/1
 ```
 
 ### Response
@@ -648,15 +648,16 @@ Registers new user
 ### Body
 ```http
 {
-    "userName": "aukse123",
-    "Email": "aukse@email.com",
-    "Password": "StrongPassword1!"
+    "userName": "lukas3",
+    "email": "lukas3@gmail.com",
+    "password": "VerySafePassword1!"
+    
 }
 ```
 
 ### Example Request:
 ```http
-POST http://localhost:5000/api/register
+POST http://localhost:5106/api/register
 ```
 
 ### Response
@@ -664,9 +665,7 @@ POST http://localhost:5000/api/register
 ```http
 Status 201
 {
-    "userId": "643abfe3-b070-4539-9b88-a709a8219e6d",
-    "userName": "aukse123",
-    "email": "aukse@email.com"
+   1
 }
 ```
 
@@ -686,14 +685,14 @@ Registers new user
 ### Body
 ```http
 {
-    "userName": "aukse1",
-    "Password": "StrongPassword1!"
+    "userName": "lukas3",
+    "Password": "VerySafePassword1!"
 }
 ```
 
 ### Example Request:
 ```http
-POST http://localhost:5000/api/login
+POST http://localhost:5106/api/login
 ```
 
 ### Response
@@ -728,7 +727,7 @@ Registers new user
 
 ### Example Request:
 ```http
-POST http://localhost:5000/api/logout
+POST http://localhost:5106/api/logout
 ```
 
 ### Response
