@@ -1,0 +1,582 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\components\\roomform.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\components\\roomform.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\components\\roomcard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\components\\roomcard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\api\\auth\\authapi.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\api\\auth\\authapi.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\components\\authprovider.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\components\\authprovider.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\pages\\registerpage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\pages\\registerpage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\api\\axios.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\api\\axios.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\api\\houseapi.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\api\\houseapi.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\components\\confirmationmodal.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\components\\confirmationmodal.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\components\\footer.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\components\\footer.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\components\\header.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\components\\header.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\components\\headerbanner.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\components\\headerbanner.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\components\\housecard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\components\\housecard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\components\\houseform.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\components\\houseform.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\components\\loadingspinner.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\components\\loadingspinner.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\components\\navbar.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\components\\navbar.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\components\\notecard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\components\\notecard.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\components\\notesection.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\components\\notesection.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\components\\protectedroute.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\components\\protectedroute.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\components\\roomsection.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\components\\roomsection.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\pages\\createhousepage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\pages\\createhousepage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\pages\\createroompage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\pages\\createroompage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\pages\\housepage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\pages\\housepage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\pages\\homepage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\pages\\homepage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\pages\\loginpage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\pages\\loginpage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\pages\\notfoundpage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\pages\\notfoundpage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\pages\\roompage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\pages\\roompage.tsx||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\client\\vite-project\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\client\\vite-project\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\data\\forumdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\data\\forumdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|c:\\users\\basbo\\desktop\\saitynulukas\\rentora\\rentora\\data\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{642135C4-7BEF-4C51-88D6-7324B28B0E43}|Rentora\\Rentora.csproj|solutionrelative:rentora\\data\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "authApi.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\api\\auth\\authApi.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\api\\auth\\authApi.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\api\\auth\\authApi.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\api\\auth\\authApi.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:57:50.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthProvider.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\AuthProvider.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\components\\AuthProvider.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\AuthProvider.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\components\\AuthProvider.tsx",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAABsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:51:16.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HeaderBanner.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\HeaderBanner.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\components\\HeaderBanner.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\HeaderBanner.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\components\\HeaderBanner.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T22:27:01.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Header.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\Header.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\components\\Header.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\Header.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\components\\Header.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T22:25:30.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RegisterPage.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\pages\\RegisterPage.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\pages\\RegisterPage.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\pages\\RegisterPage.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\pages\\RegisterPage.tsx",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAAwDwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:42:13.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoomCard.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\RoomCard.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\components\\RoomCard.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\RoomCard.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\components\\RoomCard.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:38:46.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RoomForm.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\RoomForm.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\components\\RoomForm.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\RoomForm.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\components\\RoomForm.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:48:19.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HouseCard.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\HouseCard.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\components\\HouseCard.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\HouseCard.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\components\\HouseCard.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:29:33.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HouseForm.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\HouseForm.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\components\\HouseForm.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\HouseForm.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\components\\HouseForm.tsx",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAAwF4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:50:22.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "houseApi.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\api\\houseApi.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\api\\houseApi.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\api\\houseApi.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\api\\houseApi.tsx",
+              "ViewState": "AQIAAEkAAAAAAAAAAABBwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:55:37.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "axios.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\api\\axios.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\api\\axios.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\api\\axios.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\api\\axios.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T21:52:51.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Navbar.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\Navbar.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\components\\Navbar.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\Navbar.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\components\\Navbar.tsx",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAQwHcAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T22:48:12.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Footer.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\Footer.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\components\\Footer.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\Footer.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\components\\Footer.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:11:51.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NoteCard.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\NoteCard.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\components\\NoteCard.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\NoteCard.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\components\\NoteCard.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:49:59.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ConfirmationModal.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\ConfirmationModal.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\components\\ConfirmationModal.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\ConfirmationModal.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\components\\ConfirmationModal.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:15:40.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ProtectedRoute.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\ProtectedRoute.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\components\\ProtectedRoute.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\ProtectedRoute.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\components\\ProtectedRoute.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:49:25.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CreateHousePage.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\pages\\CreateHousePage.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\pages\\CreateHousePage.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\pages\\CreateHousePage.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\pages\\CreateHousePage.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:48:12.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "CreateRoomPage.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\pages\\CreateRoomPage.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\pages\\CreateRoomPage.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\pages\\CreateRoomPage.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\pages\\CreateRoomPage.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:48:09.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoadingSpinner.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\LoadingSpinner.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\components\\LoadingSpinner.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\LoadingSpinner.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\components\\LoadingSpinner.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:15:18.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "HomePage.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\pages\\HomePage.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\pages\\HomePage.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\pages\\HomePage.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\pages\\HomePage.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:47:57.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoginPage.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\pages\\LoginPage.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\pages\\LoginPage.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\pages\\LoginPage.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\pages\\LoginPage.tsx",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAAwGMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:47:10.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "NoteSection.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\NoteSection.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\components\\NoteSection.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\NoteSection.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\components\\NoteSection.tsx",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAAwKgAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:35:54.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "NotFoundPage.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\pages\\NotFoundPage.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\pages\\NotFoundPage.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\pages\\NotFoundPage.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\pages\\NotFoundPage.tsx",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:46:35.789Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RoomSection.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\RoomSection.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\components\\RoomSection.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\components\\RoomSection.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\components\\RoomSection.tsx",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAQwBcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:34:13.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "RoomPage.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\pages\\RoomPage.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\pages\\RoomPage.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\pages\\RoomPage.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\pages\\RoomPage.tsx",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAQwIgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:39:31.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "HousePage.tsx",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\pages\\HousePage.tsx",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\pages\\HousePage.tsx",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\pages\\HousePage.tsx",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\pages\\HousePage.tsx",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAF4AAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-19T23:30:30.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\index.css",
+              "RelativeDocumentMoniker": "Rentora\\Client\\vite-project\\src\\index.css",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Client\\vite-project\\src\\index.css",
+              "RelativeToolTip": "Rentora\\Client\\vite-project\\src\\index.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-19T22:58:24.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ForumDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Data\\ForumDbContext.cs",
+              "RelativeDocumentMoniker": "Rentora\\Data\\ForumDbContext.cs",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Data\\ForumDbContext.cs",
+              "RelativeToolTip": "Rentora\\Data\\ForumDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T20:36:32.502Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Rentora\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\appsettings.Development.json",
+              "RelativeToolTip": "Rentora\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-19T20:35:30.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\appsettings.json",
+              "RelativeDocumentMoniker": "Rentora\\appsettings.json",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\appsettings.json",
+              "RelativeToolTip": "Rentora\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAACCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-19T20:35:26.226Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Rentora\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Rentora\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-19T20:36:19.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "docker-compose.yml",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Data\\docker-compose.yml",
+              "RelativeDocumentMoniker": "Rentora\\Data\\docker-compose.yml",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Data\\docker-compose.yml",
+              "RelativeToolTip": "Rentora\\Data\\docker-compose.yml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-12-19T20:35:21.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Program.cs",
+              "RelativeDocumentMoniker": "Rentora\\Program.cs",
+              "ToolTip": "C:\\Users\\basbo\\Desktop\\SaitynuLukas\\Rentora\\Rentora\\Program.cs",
+              "RelativeToolTip": "Rentora\\Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAuwBkAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T20:31:35.485Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

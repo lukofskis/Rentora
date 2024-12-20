@@ -15,7 +15,15 @@ using Rentora.Data.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.JsonWebTokens;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddCors(options =>
+{
 
+    options.AddPolicy("AllowSpecificOrigin",
+        builder => builder.WithOrigins("http://localhost:5173")
+            .AllowAnyHeader()
+            .AllowAnyMethod().
+            AllowCredentials());
+});
 //PostgreSQL
 //Npgsql.EntityFrameworkCore.PostgreSQL
 //Microsoft.EntityFrameworkCore.Tools
@@ -53,6 +61,7 @@ builder.Services.AddAuthentication(configureOptions: options =>
 });
 
 builder.Services.AddAuthorization();
+
 
 var app = builder.Build();
 //app.UseCors();
@@ -95,7 +104,7 @@ housesGroup.MapGet("houses/{houseId}", async (int houseId,ForumDbContext dbConte
 });
 
 // [Authorize(Roles = ForumRoles.ForumUser)]  ir UserId = ""
-housesGroup.MapPost("houses/", [Authorize(Roles = ForumRoles.Renter)]  async ([Validate]CreateHousesDto createHousesDto,HttpContext httpContext,ForumDbContext dbContext ) =>
+housesGroup.MapPost("houses/", [Authorize(Roles = ForumRoles.Admin)]  async ([Validate]CreateHousesDto createHousesDto,HttpContext httpContext,ForumDbContext dbContext ) =>
 {
     var houses = new Houses()
     {
@@ -214,7 +223,7 @@ roomsGroup.MapGet("rooms/{roomId}", async (int houseId,int roomId, ForumDbContex
 
 });
 
-roomsGroup.MapPost("rooms/",[Authorize(Roles = ForumRoles.Renter)] async (int houseId,[Validate]CreateRoomsDto createRoomsDto,HttpContext httpContext,ForumDbContext dbContext ) =>
+roomsGroup.MapPost("rooms/",[Authorize(Roles = ForumRoles.Admin)] async (int houseId,[Validate]CreateRoomsDto createRoomsDto,HttpContext httpContext,ForumDbContext dbContext ) =>
 {
     var house = await dbContext.Houses.FirstOrDefaultAsync(h => h.Id == houseId);
 
@@ -372,9 +381,9 @@ notesGroup.MapGet("notes/{noteId}", async (int houseId,int roomId,int noteId, Fo
 
 
 
-notesGroup.MapPost("notes/",[Authorize] async (int houseId, int roomId,[Validate]CreateNotesDto createNotesDto,HttpContext httpContext,ForumDbContext dbContext ) =>
+notesGroup.MapPost("notes/",[Authorize(Roles = ForumRoles.ForumUser)] async (int houseId, int roomId,[Validate]CreateNotesDto createNotesDto,HttpContext httpContext,ForumDbContext dbContext ) =>
 {
-    var userIsAuthorized = httpContext.User.IsInRole(ForumRoles.ForumUser) || httpContext.User.IsInRole(ForumRoles.Renter);
+    var userIsAuthorized = httpContext.User.IsInRole(ForumRoles.ForumUser) || httpContext.User.IsInRole(ForumRoles.Admin);
     if (!userIsAuthorized)
     {
         return Results.Forbid();
@@ -436,14 +445,17 @@ notesGroup.MapPut("notes/{noteId}",[Authorize] async (int houseId, int roomId, i
     
     var userId = httpContext.User.FindFirstValue(JwtRegisteredClaimNames.Sub);
     var isAdmin = httpContext.User.IsInRole(ForumRoles.Admin);
-    var isOwner = note.UserId == userId && (httpContext.User.IsInRole(ForumRoles.ForumUser) || httpContext.User.IsInRole(ForumRoles.Renter));
+    var isOwner = note.UserId == userId && (httpContext.User.IsInRole(ForumRoles.ForumUser) || httpContext.User.IsInRole(ForumRoles.Admin));
 
    
-    if (!isAdmin && !isOwner)
+    // if (!isAdmin && !isOwner)
+    // {
+    //     return Results.Forbid();
+    // }
+    if(!httpContext.User.IsInRole(ForumRoles.Admin) && httpContext.User.FindFirstValue(JwtRegisteredClaimNames.Sub) != note.UserId)
     {
         return Results.Forbid();
     }
-    
     
     note.Note = dto.Note;
 
@@ -478,9 +490,13 @@ notesGroup.MapDelete("notes/{noteId}",[Authorize] async (int houseId, int roomId
 
     var userId = httpContext.User.FindFirstValue(JwtRegisteredClaimNames.Sub);
     var isAdmin = httpContext.User.IsInRole(ForumRoles.Admin);
-    var isOwner = note.UserId == userId && (httpContext.User.IsInRole(ForumRoles.ForumUser) || httpContext.User.IsInRole(ForumRoles.Renter));
+    var isOwner = note.UserId == userId && (httpContext.User.IsInRole(ForumRoles.ForumUser) || httpContext.User.IsInRole(ForumRoles.Admin));
     
-    if (!isAdmin && !isOwner)
+    // if (!isAdmin && !isOwner)
+    // {
+    //     return Results.Forbid();
+    // }
+    if (!httpContext.User.IsInRole(ForumRoles.Admin) && httpContext.User.FindFirstValue(JwtRegisteredClaimNames.Sub) != note.UserId)
     {
         return Results.Forbid();
     }
@@ -496,6 +512,9 @@ notesGroup.MapDelete("notes/{noteId}",[Authorize] async (int houseId, int roomId
 // Microsoft.AspNetCore.Identity nebereik
 // Microsoft.AspNetCore.Identity.EntityFrameworkCore
 // Microsoft.AspNetCore.Authentication.JwtBearer
+
+app.UseCors("AllowSpecificOrigin");
+
 app.UseAuthentication();
 app.UseAuthorization();
 app.Run();

@@ -149,3 +149,10 @@ C:\Users\basbo\Desktop\SaitynuLukas\Rentora\Rentora\bin\Debug\net8.0\Microsoft.I
 C:\Users\basbo\Desktop\SaitynuLukas\Rentora\Rentora\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\basbo\Desktop\SaitynuLukas\Rentora\Rentora\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\basbo\Desktop\SaitynuLukas\Rentora\Rentora\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\basbo\Desktop\SaitynuLukas\Rentora\Rentora\bin\Debug\net8.0\Client\package-lock.json
+C:\Users\basbo\Desktop\SaitynuLukas\Rentora\Rentora\bin\Debug\net8.0\Client\package.json
+C:\Users\basbo\Desktop\SaitynuLukas\Rentora\Rentora\bin\Debug\net8.0\Client\vite-project\package-lock.json
+C:\Users\basbo\Desktop\SaitynuLukas\Rentora\Rentora\bin\Debug\net8.0\Client\vite-project\package.json
+C:\Users\basbo\Desktop\SaitynuLukas\Rentora\Rentora\bin\Debug\net8.0\Client\vite-project\tsconfig.app.json
+C:\Users\basbo\Desktop\SaitynuLukas\Rentora\Rentora\bin\Debug\net8.0\Client\vite-project\tsconfig.json
+C:\Users\basbo\Desktop\SaitynuLukas\Rentora\Rentora\bin\Debug\net8.0\Client\vite-project\tsconfig.node.json
