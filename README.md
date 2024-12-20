@@ -37,6 +37,7 @@ Kuriamas projektas – minimali nuomojamu kambario sistema (House -> Room -> Not
 ## 2. Pasirinktų technologijų aprašymas
 Projekto ‚Frontend‘ bus kuriamas su React technologija. Duomenų bazė – PostgreSQL. Serverio pusė - naudojant .Net Core Web API
 Sistemos architektūra:
+![image](https://github.com/user-attachments/assets/148becc0-60f8-4b67-83a4-17649c67d24c)
 
 
    # 3. 	Naudotojo sąsaja
