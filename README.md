@@ -60,45 +60,54 @@ img
 ### Realus pavyzdys
 ![image](https://github.com/user-attachments/assets/9a7f60fa-221f-45bd-b881-acf7bfb3cba8)
 
+
+
+## 3.3 Note
+### Wireframe
 ![image](https://github.com/user-attachments/assets/cb960b83-3dd1-4548-b450-97578ffdd548)
 
-![image](https://github.com/user-attachments/assets/5e86c6fd-2bca-49f7-afb5-7997520f996f)
-
-## 3.3 Prisijungimo forma
-### Wireframe
-![image](https://github.com/user-attachments/assets/44eec996-42e9-47ae-9614-0f77cc945060)
-
-![image](https://github.com/user-attachments/assets/392b6bbf-d83b-46e1-8d45-b3ce29507fe0)
 
 Panašaus principo wireframe pritaikomas ir registracijai, tačiau atsiranda papildomas email langas
 
 ### Realus pavyzdys (prisijungimas)
+![image](https://github.com/user-attachments/assets/58bc002b-baae-4c4c-9341-96c0890d2896)
+
+
+
+### House kurimo forma
 ![image](https://github.com/user-attachments/assets/25b642ef-e8df-4206-b0bf-1e68611531e4)
 
-![image](https://github.com/user-attachments/assets/52ed2bdf-9d4d-42cb-8a41-cfbcaf486de1)
 
-### Realus pavyzdys (registracija)
+### Realus pavyzdys (prisijungimas)
+![image](https://github.com/user-attachments/assets/48a1a76a-69c4-45f9-8797-d6165f4f835a)
+
+
+### Room kurimo forma
+![image](https://github.com/user-attachments/assets/44eec996-42e9-47ae-9614-0f77cc945060)
+### Realus pavyzdys (prisijungimas)
+![image](https://github.com/user-attachments/assets/c0a7e0b5-7d57-487f-8ef6-131315fe392e)
+
+
+## 3.4 Registracijos forma
+
 ![image](https://github.com/user-attachments/assets/ba927e83-8a39-48ee-a011-25309b3c71b9)
 
-![image](https://github.com/user-attachments/assets/72486aae-f1f9-4ec9-aa53-720a7b985b82)
 
-## 3.4 Prisijungimo forma
-### Wireframe
-![image](https://github.com/user-attachments/assets/495ce9eb-9e30-4ed9-8866-5a66cc54ff7d)
+### Realus pavyzdys (prisijungimas)
+![image](https://github.com/user-attachments/assets/9f065ab2-c411-4926-8863-3cca2535ec47)
+
+
 
 Panašaus principo wireframe pritaikomas ir kitiems kūrumo/redagavimo langams
 
 ### Realus pavyzdys (kuriamas naujas meal)
-![image](https://github.com/user-attachments/assets/43ac33db-7258-4a86-aa36-857d497fa570)
 
 ### Realus pavyzdys (redaguojamas meal)
-![image](https://github.com/user-attachments/assets/a8f1eff5-a492-4324-b796-2f5e084a4760)
-
 ### Realus pavyzdys (kuriamas naujas recipie)
-![image](https://github.com/user-attachments/assets/6480dbab-3ca2-47d2-9848-08c3ee2740a7)
+
 
 ### Realus pavyzdys (redaguojamas recipie)
-![image](https://github.com/user-attachments/assets/2a493bdf-ddc5-4801-b574-ff73d10f379a)
+
 
 # 4.	API specifikacija
 
