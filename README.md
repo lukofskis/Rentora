@@ -38,7 +38,6 @@ Kuriamas projektas – minimali nuomojamu kambario sistema (House -> Room -> Not
 Projekto ‚Frontend‘ bus kuriamas su React technologija. Duomenų bazė – PostgreSQL. Serverio pusė - naudojant .Net Core Web API
 Sistemos architektūra:
 
-img
 
    # 3. 	Naudotojo sąsaja
 ## 3.1 Pagrindinis/Home puslaptis
@@ -67,22 +66,23 @@ img
 ![image](https://github.com/user-attachments/assets/cb960b83-3dd1-4548-b450-97578ffdd548)
 
 
-Panašaus principo wireframe pritaikomas ir registracijai, tačiau atsiranda papildomas email langas
 
-### Realus pavyzdys (prisijungimas)
+### Realus pavyzdys
 ![image](https://github.com/user-attachments/assets/58bc002b-baae-4c4c-9341-96c0890d2896)
 
 
 
-### House kurimo forma
+### 3.4 House kurimo forma
+### Wireframe
 ![image](https://github.com/user-attachments/assets/25b642ef-e8df-4206-b0bf-1e68611531e4)
 
 
-### Realus pavyzdys (prisijungimas)
+### Realus pavyzdys 
 ![image](https://github.com/user-attachments/assets/48a1a76a-69c4-45f9-8797-d6165f4f835a)
 
 
-### Room kurimo forma
+### 3.5 Room kurimo forma
+### Wireframe
 ![image](https://github.com/user-attachments/assets/44eec996-42e9-47ae-9614-0f77cc945060)
 ### Realus pavyzdys (prisijungimas)
 ![image](https://github.com/user-attachments/assets/c0a7e0b5-7d57-487f-8ef6-131315fe392e)
@@ -95,6 +95,8 @@ Panašaus principo wireframe pritaikomas ir registracijai, tačiau atsiranda pap
 
 ### Realus pavyzdys (prisijungimas)
 ![image](https://github.com/user-attachments/assets/9f065ab2-c411-4926-8863-3cca2535ec47)
+
+Panašaus principo wireframe pritaikomas ir registracijai, tačiau atsiranda papildomas email langas
 
 
 
